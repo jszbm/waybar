@@ -3,6 +3,7 @@
 ### Required fonts:
 - Cantarell, Hack Nerd Font
 
+Installation:
 ```
 sudo pacman -S cantarell-fonts ttf-hack-nerd
 cd ./.config/
