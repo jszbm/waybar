@@ -1,4 +1,4 @@
-# My personal [waybar](https://github.com/Alexays/Waybar) configuration files.
+# My [waybar](https://github.com/Alexays/Waybar) configuration files.
 
 
 ### Required fonts:
