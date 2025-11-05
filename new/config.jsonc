@@ -1,0 +1,149 @@
+{
+	"output": "DP-2",
+	"layer": "top",
+	"position": "top",
+
+	"modules-left": [
+		"hyprland/submap",
+		"hyprland/workspaces",
+	],
+	
+	"modules-center": [
+		"hyprland/window",
+	],
+
+	"modules-right": [
+		"tray",
+		"network",
+		"memory",
+		"cpu",
+		"temperature",
+		"battery",
+		"pulseaudio",
+		"clock#date",
+		"clock#time"
+	],
+
+	// Modules
+
+	"battery": {
+		"interval": 10,
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format-time": "{H}:{M:02}",
+		"format": "{icon} {capacity}% ({time})",
+		"format-charging": " {capacity}% ({time})",
+		"format-charging-full": " {capacity}%",
+		"format-full": "{icon} {capacity}%",
+		"format-alt": "{icon} {power}W",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+		"tooltip": false
+	},
+
+	"clock#time": {
+		"interval": 10,
+		"format-alt": "{:%H:%M}",
+		"format": "{:%I:%M %p}",
+		"tooltip": false
+	},
+
+	"clock#date": {
+		"interval": 20,
+		"format": "{:%e %b %Y}",
+		"tooltip": false
+		//"tooltip-format": "{:%e %B %Y}"
+	},
+
+	"cpu": {
+		"interval": 5,
+		"tooltip": false,
+		"format": "\uf4bc   {usage}%",
+		"format-alt": "\uf4bc   {load}",
+		"states": {
+			"warning": 70,
+			"critical": 90
+		}
+	},
+
+	"hyprland/language": {
+		"format": "  {}",
+		"format-en": "us",
+		"format-by": "by",
+		"format-ru": "ru",
+		"format-jp": "jp",
+		"min-length": 5,
+		"on-click": "swaymsg 'input * xkb_switch_layout next'",
+		"tooltip": false
+	},
+
+	"memory": {
+		"interval": 5,
+		"format": "\uefc5    {used:0.1f}GB / {total:0.1f}GB",
+		"states": {
+			"warning": 70,
+			"critical": 90
+		},
+		"tooltip": false
+	},
+
+	"network": {
+		"interval": 5,
+		"format-wifi": " {essid} ({signalStrength}%)",
+		"format-ethernet": "\uef09    {ifname}",
+		"format-disconnected": "No connection",
+		"format-alt": "\udb82\ude5f  {ipaddr}/{cidr}",
+		"tooltip": false
+	},
+
+	"hyprland/submap": {
+		"format": "{}",
+		"tooltip": false
+	},
+
+	"hyprland/window": {
+		"format": "{}",
+		"max-length": 100,
+		"tooltip": false
+	},
+
+	"hyprland/workspaces": {
+		"format": "{name}"
+	},
+
+	"pulseaudio": {
+		"format": "\uf028    {volume}%",
+		"format-bluetooth": "\udb82\udd70    {volume}%",
+		"format-muted": "\ueee8",
+		"scroll-step": 10,
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"tooltip": false
+	},
+
+	"temperature": {
+		"critical-threshold": 90,
+		"interval": 5,
+		"format": "{icon} {temperatureC}\udb81\udd04",
+		"format-icons": [
+			"\uf2cb",
+			"\uf2ca",
+			"\uf2c9",
+			"\uf2c7"
+		],
+		"tooltip": false
+	},
+
+	"tray": {
+		"icon-size": 14,
+		"spacing": 6
+	},
+}
+
+// vi:ft=jsonc
