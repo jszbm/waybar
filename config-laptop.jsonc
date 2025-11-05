@@ -34,8 +34,8 @@
 		},
 		"format-time": "{H}:{M:02}",
 		"format": "{icon}    {capacity}%",
-		"format-charging": "\udb85\udc0b    {capacity}%",
-		"format-charging-full": "\udb85\udc0b    {capacity}%",
+		"format-charging": "\udb85\udc0b  {capacity}%",
+		"format-charging-full": "\udb85\udc0b  {capacity}%",
 		"format-full": "{icon}    {capacity}%",
 		"format-alt": "{icon}    {power}W",
 		"format-icons": [
