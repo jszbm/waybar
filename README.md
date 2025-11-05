@@ -1,4 +1,4 @@
-# My [waybar](https://github.com/Alexays/Waybar) configuration files.
+# My [waybar](https://github.com/Alexays/Waybar) configuration files
 
 
 ### Required fonts:
@@ -11,4 +11,4 @@ cd ./.config/
 git clone git@github.com:jszbm/waybar.git
 ```
 
-Rename one config-platform.jsonc to config.jsonc according to your system
+Rename one config-platform.jsonc to config.jsonc according to your system.
