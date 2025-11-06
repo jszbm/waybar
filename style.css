@@ -80,11 +80,11 @@ button:hover {
 
 
 #clock {
-    margin:     0px 8px 0px 0px;
+    margin: 0px 8px 0px 0px;
 }
 
 #battery.warning {
-   color:       rgba(255, 210, 4, 1);
+    color: gold;
 }
 
 #battery.critical {
