@@ -8,17 +8,21 @@ sudo pacman -S cantarell-fonts ttf-hack-nerd
 
 ### Installation:
 ```
-cd ./.config/
+cd
+mkdir config
+cd ./config/
 git clone git@github.com:jszbm/waybar.git
-cd ./waybar/
+cd ..
+cp -r ./config/waybar ./.config/waybar/
+cd ./.config/waybar
 ```
 
 Laptop:
 ```
-mv config-laptop.jsonc config.jsonc && rm config-desktop.jsonc
+cp config-laptop.jsonc config.jsonc
 ```
 
 Desktop:
 ```
-mv config-desktop.jsonc config.jsonc && rm config-laptop.jsonc
+cp config-desktop.jsonc config.jsonc
 ```
